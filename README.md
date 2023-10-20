@@ -25,11 +25,36 @@ Summary table of projects described below.
 
 ### ADAsen
 
-@Andreas please can you complete this sections
+**Problem statement**
 
-As part of the ADAsen project an interactive annotation tool for labelling time series and 2D data was developed.
+The current methods for sensor quality checking applied at Eawag, i.e. based on regular hardware inspection and a posteriori data inspection, are not adequate for use with the ever-larger data sets that are collected by researchers at Eawag. A new approach to sensor management is needed.
+
+**Project goals**
+
+The main goal of the project is **to increase the standard for online sensor management at Eawag** to a level that - as a bare minimum - includes the following elements:
+ - Online sensor signals are checked automatically with simple algorithmic tools to identify basic issues as soon as they arise. These issues include presence of outliers, stuck or barely moving sensor signals, and out-of-range sensor values.
+ - Online sensor signals are checked for important deviations from historical data (anomaly detection). Such deviations are caused by either (i) the presence of one or more sensor faults (fault detection) or (ii) meaningful changes in the monitored system (novelty detection). The use of such tools will decrease the time invested in sensor maintenance when the produced data appears normal (no fault & no novelty). Conversely, the time invested in sensor maintenance will be increased when the produced data is of low quality (faulty condition) or of large scientific value (novelty condition).
+ - The research staff that manages the sensor signals will obtain automatic alerts of the presence of detected anomalies (faults or novelties) via e-mail, SMS, or other IT-based communication tools. As a result, they will be able to address sensor maintenance requirements exactly when it matters, i.e. shortly after the obtained sensor signals have turned faulty or when the collected data has turned extremely valuable.
+
+**Deliverables**
+- *Software*. Development of a software toolbox for online anomaly detection and anomaly visualization. A basic version will be ready and tested for Eawag-wide use by the end of the project.
+- *Benchmarking*. The implemented tools for anomaly detection are benchmarked against each other to find out (i) what kind of algorithms are particularly useful for environmental system monitoring and (ii) whether or not state-of-the-art anomaly detection tools are sufficient to address the needs for such tools at Eawag.
+- *Knowledge transfer*. A series of workshops will inform the Eawag audience and to ensure that the needs of end-users are addressed. The Sensor Lab will be involved in all discussions regarding software development.
+
+**Software**
 
 Russo, S. (2020). ADASen Labelling Tool (Version 1.0). Eawag: Swiss Federal Institute of Aquatic Science and Technology. https://doi.org/10.25678/0002PC
+
+**Publications**
+
+Stefania Russo, Michael D Besmer, Frank Blumensaat, Damien Bouffard, Andy Disch, Frederik Hammes, Angelika Hess, Moritz Luerig, Blake Matthews, Camille Minaudo, Eberhard Morgenroth, Viet Tran-Khac, Kris Villez. *The value of human data annotation for machine learning based anomaly detection in environmental systems*. Water Research, 206, 2021. https://doi.org/10.1016/j.watres.2021.117695
+
+Stefania Russo, Moritz Luerig, Wenjin Hao, Blake Matthews, Kris Villez. *Active learning for anomaly detection in environmental data*. Environmental Modelling & Software, 134, 2020. https://doi.org/10.1016/j.envsoft.2020.104869
+
+Stefania Russo, Andy Disch, Frank Blumensaat, Kris Villez. *Anomaly detection using deep autoencoders for in-situ wastewater systems monitoring data*. arXiv preprint arXiv:2002.03843, 2020. https://doi.org/10.48550/arXiv.2002.03843
+
+Stefania Russo, Guangyu Li, Kris Villez. *Automated model selection in principal component analysis: A new approach based on the cross-validated ignorance score*. Industrial & Engineering Chemistry Research, 30, 58, 2019. https://doi.org/10.1021/acs.iecr.9b00642
+
 
 ### ENVASS
 
