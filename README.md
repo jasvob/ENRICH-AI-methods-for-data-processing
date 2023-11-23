@@ -99,6 +99,31 @@ https://gitlab.renkulab.io/eawagrs/lakecrest
 | Elisa Calamita      | Eawag     | elisa.calamita@eawag.ch       |
 | Michael Brechbühler | Eawag     | michael.brechbuehler@eawag.ch |
 
+### Climis4Aval
+
+Climis4Aval is a joint project of SLF together with SDSC, which aims at cleansing of data coming from the IMIS Network (Intercantonal Measurement and Information System) in order to provide better inputs for operational avalache forecasting.
+
+https://www.datascience.ch/projects/climis4aval
+
+The main goal of the project is to employ machine learning methods in order to:
+ * correct biases in the measured data
+ * detect outliers and anomalies
+ * impute missing data (either on the forecasting basis or using spatial interpolation)
+
+Main outcomes should be:
+ * more precise data as inputs to other models used for operational avalanche forecasting
+ * statistics published by SLF not skewed by anomalies and outliers
+ * providing clean datasets to researchers, thus reducing their overhead in data preparation
+
+The challenging part of the project is the employment of machine learning methods with limited amout of ground truth information. In some cases, the ground truth information is missing completely. We are exploring several different avenues to address this problem. We have annotated some data manually, which gives the possibility to employ supervised machine learning algorithms for time-series data. Where we do not have ground-truth, we are trying to solve the task taking advantage of forecasting algorithms. In these two cases, we are experimenting with some of the state-of-the-art models such as [TCN](https://arxiv.org/abs/1608.08242), [NBeats](https://arxiv.org/abs/1905.10437) and [TimesNet](https://arxiv.org/abs/2210.02186). To impute longer periods without data or as an alternative approach to anomaly detection, we are also looking into spatial interpolation methods. Here, one can go for some classical approaches such as Gaussian Processes, or try to leverage the power of machine learning and experiment with methods such as [CNPs](https://arxiv.org/abs/1807.01613) and its variations, etc.
+
+On the SLF side, the following people are actively involved:
+| Name                | Institute | Email                         |
+| ------------------- | --------- | ----------------------------- |
+| Jan Svoboda         | SLF       | jan.svoboda@slf.ch            |
+| Marc Ruesch         | SLF       | ruesch@slf.ch                 |
+| David Liechti       | SLF       | david.liechti@slf.ch          |
+
 ## Group Members
 
 | Name            | Institute | Email                     |
